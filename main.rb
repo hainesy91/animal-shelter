@@ -28,8 +28,8 @@ end
 
 answer = menu 
 
-# while answer != 'q'
-#   case response
-#   when 'a'
-#     puts "What kind of animal would you like? \n"
+while answer != 'q'
+  case response
+  when 'a'
+    puts "What kind of animal would you like? \n"
 
