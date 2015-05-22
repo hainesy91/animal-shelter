@@ -4,6 +4,8 @@ require_relative "clients"
 require_relative "animal"
 require_relative "shelter"
 
+happi_tails = Shelter.new pen_spaces: 10, address: '64 Rainbow Road, Mushroom Kingdom', helpers: true
+
 def menu
   puts 'clear'
   puts "-" * 80
@@ -12,4 +14,10 @@ def menu
   gets.chomp
 end
 
-binding.pry
+answer = menu 
+
+while answer != 'q'
+  case response
+  when 'a'
+    puts "What kind of animal would you like? \n"
+
